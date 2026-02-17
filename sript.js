@@ -57,30 +57,3 @@ const spreadCopy= [...originalScores]; // creates a new array with the same elem
 spreadCopy[0]= 50;
 console.log("Original Scores:", originalScores);
 console.log("Spread Copy:", spreadCopy);
-
-//Section B: Searching & Checking (Accessors & Iterators)i
-
-//Exercise 4: Finding Elements by Value and Index
-
-const studentNames= ["Alice", "Bob", "Charlie", "David"];
-//a
-console.log(studentNames.indexOf("Alice"));
-//b
-console.log(studentNames.lastIndexOf("salice"));
-//c
-console.log(studentNames.includes("Charlie"));
-//d
-console.log(studentNames.includes("Eve"));
-
-//Exercise 5: Advanced Search with Conditionals 
-
-const products= [
-    {id:1, name: "Laptop", price: 999},
-    {id:2, name: "Smartphone", price: 499},
-    {id:3, name: "Tablet", price: 299}
-];
-
-//a
-const foundProduct= products.find(product => product.id === 2);
-console.log(foundProduct);
-
