@@ -83,3 +83,4 @@ const products= [
 //a
 const foundProduct= products.find(product => product.id === 2);
 console.log(foundProduct);
+
