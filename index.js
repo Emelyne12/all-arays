@@ -91,5 +91,18 @@ function analyzeWarehouse(products, warehouse) {
   
   // Find the most expensive product using reduce
   let mostExpensiveProduct = products.reduce((max, p) => p.price > max.price ? p : max);
-  console.log("Most expensive product:", mostExpensiveProduct);}
+  console.log("Most expensive product:", mostExpensiveProduct);
   
+  // Return the required object
+  return {
+    totalItemsStored: totalItemsStored,
+    totalInventoryValue: totalInventoryValue,
+    mostStoredProduct: mostStoredProduct,
+    sortedAscending: sortedAscending,
+    sortedDescending: sortedDescending,
+    expensiveProducts: expensiveProducts
+  };
+}
+
+const result = analyzeWarehouse(products, warehouse);
+console.log("\nFinal Result:", result);
